@@ -53,7 +53,7 @@ h6 {
 /* header */
 
 .header {
-  height: 90vh;
+  height: 100vh;
   position: relative;
 }
 
@@ -106,4 +106,39 @@ h6 {
 
 #main-nav ul li a:hover {
   color: #333;
+}
+
+/* below header area */
+
+.below-header-boxes .container {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  transform: translateY(-80px);
+  justify-content: space-between;
+}
+
+.box {
+  width: 270px;
+  height: 270px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-border {
+  border: 2px solid #00b7fe;
+}
+
+.icon-image {
+  width: 134px;
+  height: 134px;
+}
+
+.box-text {
+  font-size: 17px;
+  line-height: 27px;
+  color: #707070;
 }
