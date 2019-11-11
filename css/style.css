@@ -1,6 +1,7 @@
 :root {
   --max-width: 1220px;
   --link-color: #006ff7;
+  --body-color: #00c1ff;
 }
 
 * {
@@ -52,7 +53,7 @@ h6 {
 /* header */
 
 .header {
-  height: 80vh;
+  height: 890px;
   position: relative;
 }
 
