@@ -1,0 +1,108 @@
+:root {
+  --max-width: 1220px;
+  --link-color: #006ff7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.55rem;
+  line-height: 1.3;
+}
+
+/* Utility */
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+/* header */
+
+.header {
+  height: 80vh;
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  background-image: url("../assets/showcase-bg.png");
+  background-position: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Navigation */
+#main-nav {
+  /* background: #fff; */
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+#main-nav .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+
+#main-nav .logo {
+  width: 196px;
+  height: 66px;
+}
+
+#main-nav ul {
+  justify-self: end;
+  display: flex;
+}
+
+#main-nav ul li a {
+  padding: 0.75rem;
+  font-weight: bold;
+  color: var(--link-color);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: right;
+}
+
+#main-nav ul li a:hover {
+  color: #333;
+}
