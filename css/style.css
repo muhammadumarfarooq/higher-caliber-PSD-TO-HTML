@@ -246,3 +246,67 @@ h6 {
   line-height: 39px;
   color: #fff;
 }
+
+/* Services */
+
+.services {
+  padding-bottom: 10rem;
+}
+
+.services .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 2rem;
+  padding: 4rem 0;
+}
+
+.service {
+  width: 291px;
+  /*height: 207px; */
+  background: #f8fbfd;
+  padding: 2rem;
+  margin: auto;
+}
+.service-title {
+  display: flex;
+}
+
+.service-title {
+  display: flex;
+}
+
+.service-title p {
+  width: 115px;
+  font-weight: 800;
+  font-size: 16px;
+  color: #434343;
+  margin-left: 2rem;
+}
+
+.service-title img {
+  width: 63px;
+  height: 63px;
+}
+
+.services-text {
+  max-width: 847px;
+  margin: auto;
+}
+
+.services-text p {
+  font-weight: 20px;
+  line-height: 30px;
+  color: #434343;
+  text-align: center;
+}
+
+.service-detail {
+  width: 232px;
+  width: 232px;
+  /* text-align: center; */
+  margin-top: 2rem;
+}
+
+.service-detail p {
+  font-size: 14px;
+}
