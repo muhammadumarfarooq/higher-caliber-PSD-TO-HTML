@@ -142,3 +142,71 @@ h6 {
   line-height: 27px;
   color: #707070;
 }
+
+/* Platform for development*/
+.platform-for-development {
+  position: relative;
+  overflow: hidden;
+}
+
+.platform-for-development-wraper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.platform-for-development-title {
+  font-weight: 800;
+  font-size: 26;
+  line-height: 39px;
+  color: #434343;
+  margin-bottom: 20px;
+}
+
+.platform-for-development-wraper::after {
+  content: "";
+  background: #00c1ff;
+  width: 53px;
+  height: 6px;
+  display: inline-block;
+  text-align: center;
+}
+
+.platform-for-development-diamond {
+  position: absolute;
+  top: 0;
+  right: -210px;
+  max-width: 826px;
+  max-height: 587px;
+}
+
+.platform-for-development .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.platform-for-development_content {
+  max-width: 509px;
+}
+
+.platform-for-development_content h1 {
+  color: #4d4d4d;
+  font-weight: 600;
+  font-size: 29px;
+  line-height: 28px;
+}
+
+.special-word {
+  font-size: 41px;
+  font-weight: 800;
+  line-height: 48px;
+  color: #00c1ff;
+}
+
+.platform-for-development_content p {
+  color: #5a5a5a;
+  font-size: 20px;
+  line-height: 30px;
+}
