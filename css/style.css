@@ -53,7 +53,7 @@ h6 {
 /* header */
 
 .header {
-  height: 100vh;
+  padding-bottom: 10rem;
   position: relative;
 }
 
@@ -177,6 +177,7 @@ h6 {
 .platform-for-development-diamond {
   position: absolute;
   top: 0;
+  z-index: -1;
   right: -210px;
   max-width: 826px;
   max-height: 587px;
@@ -209,4 +210,39 @@ h6 {
   color: #5a5a5a;
   font-size: 20px;
   line-height: 30px;
+}
+
+/* portfolio */
+
+.portfolio {
+  margin-top: 3rem;
+}
+
+.portfolio .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  width: 349px;
+  padding-bottom: 5rem;
+}
+
+.portfolio-card {
+  max-width: 349px;
+  height: 349px;
+  background: #e7f0f7;
+}
+
+.portfolio-card-title {
+  max-width: 255px;
+  height: 77px;
+  background: #97e7ff;
+  margin: -2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  line-height: 39px;
+  color: #fff;
 }
