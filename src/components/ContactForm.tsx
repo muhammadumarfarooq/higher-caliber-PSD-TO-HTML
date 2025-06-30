@@ -6,7 +6,7 @@ import { Textarea } from "./ui/textarea";
 export function ContactForm() {
   return (
     <MotionSection>
-      <section className="w-full bg-[#eef9ff] py-20">
+      <section id="contact" className="w-full bg-[#eef9ff] py-20">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-4xl font-bold mb-2 text-center">
             Contact <span className="text-[#333]">us</span>

@@ -5,7 +5,10 @@ import { InfoBoxes } from "./InfoBoxes";
 
 export function Hero() {
   return (
-    <section className="relative flex flex-col gap-16 md:gap-24 items-center justify-between max-w-7xl mx-auto px-6 py-24 overflow-hidden bg-gradient-to-r from-white to-[#e3f6ff]">
+    <section
+      id="about"
+      className="relative flex flex-col gap-16 md:gap-24 items-center justify-between max-w-7xl mx-auto px-6 py-24 overflow-hidden bg-gradient-to-r from-white to-[#e3f6ff]"
+    >
       <div className="absolute top-[3%] left-[-78.5%] w-[1100px] h-[460px] opacity-30 z-0">
         <Image
           src="/assets/dots.png"

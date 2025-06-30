@@ -2,7 +2,10 @@ import Image from "next/image";
 
 export function PlatformSection() {
   return (
-    <section className="relative w-full bg-white py-16 overflow-hidden">
+    <section
+      id="development"
+      className="relative w-full bg-white py-16 overflow-hidden"
+    >
       <div className="absolute inset-0 opacity-5 z-0">
         <Image
           src="/assets/platform-bg.png"

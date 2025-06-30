@@ -4,7 +4,7 @@ import { MotionSection } from "./MotionSection";
 export function InfoBoxes() {
   return (
     <MotionSection>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-48 gap-y-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-10 gap-y-10">
         {INFO_BOXES.map((box) => (
           <div
             key={box.label}
