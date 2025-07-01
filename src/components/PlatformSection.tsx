@@ -1,11 +1,15 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 export function PlatformSection() {
   return (
     <section
       id="development"
-      className="relative w-full bg-white py-16 overflow-hidden"
+      className="relative w-full bg-white py-20 overflow-hidden"
     >
+      {/* ✅ Background dots or subtle texture */}
       <div className="absolute inset-0 opacity-5 z-0">
         <Image
           src="/assets/platform-bg.png"
@@ -16,16 +20,27 @@ export function PlatformSection() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        {/* Heading */}
-        <h2 className="text-4xl font-extrabold text-neutral-800 mb-10 text-center">
+        {/* ✅ Heading */}
+        <motion.h2
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-4xl font-extrabold text-neutral-800 mb-10 text-center"
+        >
           Platform for Development
-          <span className="block w-14 h-1.5 bg-[#00bfff] mt-5 mx-auto"></span>
-        </h2>
+          <span className="block w-14 h-1.5 bg-[#00bfff] mt-4 mx-auto"></span>
+        </motion.h2>
 
-        {/* Content */}
-        <div className="flex flex-col md:flex-row mx-3 items-center">
-          {/* Left Image */}
-          <div className="flex-shrink-0">
+        {/* ✅ Content */}
+        <div className="flex flex-col md:flex-row items-center gap-16">
+          {/* Left Side Image */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: true }}
+          >
             <Image
               src="/assets/platform-for-development-img.png"
               width={600}
@@ -33,10 +48,16 @@ export function PlatformSection() {
               alt="Platform"
               className="object-contain"
             />
-          </div>
+          </motion.div>
 
-          {/* Right Text */}
-          <div className="max-w-[500px] ">
+          {/* Right Side Text */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: true }}
+            className="max-w-lg w-full"
+          >
             <h3>
               <span className="text-[42px] text-[#00bfff] font-extrabold">
                 Shopify
@@ -53,7 +74,7 @@ export function PlatformSection() {
               survived not only five centuries, but also the leap into
               electronic typesetting.
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

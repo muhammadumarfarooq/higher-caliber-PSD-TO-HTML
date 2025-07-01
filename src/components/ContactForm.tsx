@@ -1,3 +1,5 @@
+"use client";
+
 import { MotionSection } from "./MotionSection";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
@@ -6,57 +8,68 @@ import { Textarea } from "./ui/textarea";
 export function ContactForm() {
   return (
     <MotionSection>
-      <section id="contact" className="w-full bg-[#eef9ff] py-20">
+      <section
+        id="contact"
+        className="w-full bg-[#eef9ff] py-24 overflow-hidden"
+      >
         <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-4xl font-bold mb-2 text-center">
-            Contact <span className="text-[#333]">us</span>
+          {/* Heading */}
+          <h2 className="text-4xl font-extrabold text-center text-neutral-800 mb-12">
+            Contact <span className="text-[#333]">Us</span>
+            <span className="block w-14 h-1.5 bg-[#00bfff] mt-5 mx-auto rounded-full"></span>
           </h2>
-          <div className="w-14 h-1 bg-[#00bfff] mx-auto mb-10"></div>
 
+          {/* Form */}
           <form
-            action="https://formspree.io/f/{your-id}"
+            action="https://formspree.io/f/{your-id}" // replace {your-id}
             method="POST"
-            className="space-y-6"
+            className="backdrop-blur-lg bg-white/70 border border-slate-200 rounded-xl p-8 shadow-md space-y-6"
           >
-            {/* Top Input Row */}
+            {/* Inputs Row */}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
               <Input
                 name="firstName"
-                placeholder="First name"
-                className="w-full border border-blue-200 rounded-md px-4 py-3 focus:outline-none"
+                placeholder="First Name"
+                required
+                className="border border-blue-200 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#00bfff]"
               />
               <Input
                 name="lastName"
-                placeholder="Last name"
-                className="w-full border border-blue-200 rounded-md px-4 py-3 focus:outline-none"
+                placeholder="Last Name"
+                required
+                className="border border-blue-200 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#00bfff]"
               />
               <Input
                 name="email"
                 placeholder="Email"
-                className="w-full border border-blue-200 rounded-md px-4 py-3 focus:outline-none"
+                required
+                type="email"
+                className="border border-blue-200 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#00bfff]"
               />
               <Input
                 name="phone"
                 placeholder="Phone #"
-                className="w-full border border-blue-200 rounded-md px-4 py-3 focus:outline-none"
+                required
+                className="border border-blue-200 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#00bfff]"
               />
             </div>
 
-            {/* Message Box */}
+            {/* Message */}
             <Textarea
               name="message"
               placeholder="Message"
               rows={5}
-              className="w-full border border-blue-200 rounded-md px-4 py-3 focus:outline-none"
+              required
+              className="border border-blue-200 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#00bfff]"
             />
 
-            {/* Submit Button */}
+            {/* Submit */}
             <div className="flex justify-center">
               <Button
                 type="submit"
-                className="bg-[#1abcfb] hover:bg-[#0aaee8] px-12 py-3 text-lg"
+                className="bg-[#00bfff] hover:bg-[#00a6e6] px-10 py-3 text-lg rounded-md"
               >
-                Send
+                Send Message
               </Button>
             </div>
           </form>
