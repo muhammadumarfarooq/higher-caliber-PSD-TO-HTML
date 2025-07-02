@@ -34,8 +34,8 @@ export function Navbar() {
           <Image
             src="/assets/logo.png"
             alt="High Caliber Logo"
-            width={180}
-            height={180}
+            width={140}
+            height={140}
             className="hover:scale-105 transition-transform"
           />
         </Link>
